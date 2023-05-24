@@ -12,10 +12,73 @@
 },1000) */
 
 //setTimeout
-
+/* 
 function acao() {
     document.write('Escrevendo... <br/>')
 }
 
 
-setTimeout(acao, 3000) //dois parametros (função e tempo em ms) // executa somente uma vez
+setTimeout(acao, 3000) //dois parametros (função e tempo em ms) // executa somente uma vez */
+
+
+//-----------------------
+
+//OBJETOS
+
+/* let pessoa = {
+    nome: 'João',
+    idade: 17,
+    altura: 1.72,
+    cargo: 'Estudante do curso FullStack'
+};
+console.log(pessoa)
+//pessoa.nome = acessar o nome :)
+ */
+
+/* let usuarios = [
+    {nome: "João", idade: 17, cargo:"Desenvolvedor"},
+    {nome: "Nicolas", idade: 18, cargo:"FullStack"},
+    {nome:"Felipe", idade:20, cargo:"CEDETEC"}
+]
+console.log(usuarios); */
+
+
+//------------------------
+//Template String
+/* let nome = "João";
+let sobrenome = "Pandini";
+let idade = 17;
+
+let mensagem = `Meu nome é ${nome} ${sobrenome}, minha idade é ${idade} anos`;
+
+console.log(mensagem); */
+
+//--------------
+//descontruindo um objeto
+
+
+let pessoa = {
+    nome: "João",
+    idade: 17,
+    cargo: "Programador",
+    empresa: "Useall"
+};
+
+/* let nome = "Pedrinho"
+
+const { nome:NomePessoa, idade, cargo, empresa } = pessoa;
+console.log(NomePessoa, idade);
+console.log(pessoa); */
+
+//-------------------------
+//descontruindo um ARRAY
+let nomes = ["1- João", "2- Lucas", "3- Pedro"];
+//const { 0:nome1, 1:nome2, 2:nome3 } = nomes;
+
+//console.log(nome1);
+//console.log(nome2); 
+
+let [nome1, nome2, nome3] = nomes;
+console.log(nome1);
+
+
