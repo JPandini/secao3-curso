@@ -57,13 +57,13 @@ console.log(mensagem); */
 //descontruindo um objeto
 
 
-let pessoa = {
+/* let pessoa = {
     nome: "João",
     idade: 17,
     cargo: "Programador",
     empresa: "Useall"
 };
-
+ */
 /* let nome = "Pedrinho"
 
 const { nome:NomePessoa, idade, cargo, empresa } = pessoa;
@@ -72,13 +72,47 @@ console.log(pessoa); */
 
 //-------------------------
 //descontruindo um ARRAY
-let nomes = ["1- João", "2- Lucas", "3- Pedro"];
+//let nomes = ["1- João", "2- Lucas", "3- Pedro"];
 //const { 0:nome1, 1:nome2, 2:nome3 } = nomes;
 
 //console.log(nome1);
 //console.log(nome2); 
+//let [nome1, nome2, nome3] = nomes;
+//console.log(nome1);
 
-let [nome1, nome2, nome3] = nomes;
-console.log(nome1);
 
+
+//----------------Spread operator --> ...
+
+/* let num1 = [1,2,3];
+let num2 = [...num1,4,5,6];
+console.log(num2); */
+
+/* let pessoa = {
+    nome: "João",
+    idade: 17,
+    cargo: "Programador",
+    empresa: "AgroSys",
+}
+
+let novaPessoa = {
+    ...pessoa,
+    status: "ATIVO",
+    cidade: "Içara - sc"
+}
+console.log(novaPessoa);  */
+
+
+function novoUsuario(info){
+    let dados = {
+        ...info,
+        nome: "João",
+        cidade: "Içara",
+        Estado: "SC"
+    }
+    
+console.log(dados);
+};
+
+novoUsuario({ cargo:"Programador", status: "Ativo" })
 
