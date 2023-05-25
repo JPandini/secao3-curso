@@ -103,7 +103,7 @@ let novaPessoa = {
 console.log(novaPessoa);  */
 
 
-function novoUsuario(info){
+/* function novoUsuario(info){
     let dados = {
         ...info,
         nome: "João",
@@ -115,4 +115,20 @@ console.log(dados);
 };
 
 novoUsuario({ cargo:"Programador", status: "Ativo" })
+ */
 
+
+//------------REST OPERATOR
+/* function convidados (...nomes){ //sem os "..." mostra somente o primeiro parametro 
+    console.log(nomes);
+}
+
+convidados("João", "Larissa", "Nicolas"); */
+
+
+function gerador(...numeros){
+    console.log(numeros)
+    const numeroGerado = Math.floor(Math.random() * numeros.length)
+    console.log(`O nomero gerado foi: ${numeros[numeroGerado]}`);
+}
+gerador (1, 2, 4, 66, 65, 24, 12, 33);
