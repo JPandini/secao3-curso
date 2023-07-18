@@ -180,7 +180,7 @@ console.log(resultado)
 
 //==========AULA24==============
 //Funções anonimas
-function somar (a, b){
+/* function somar (a, b){
     let total = a + b
     console.log(total)
 }
@@ -190,4 +190,18 @@ let subtrair = (valor1, valor2) => {
     let total = valor1 - valor2;
     console.log(total);
 }
-subtrair(30, 20) 
+subtrair(30, 20)  */
+
+//===========Aula25===========
+//include, startsWith, endsWith
+
+let nomes = ["Matheus", "Lucas", "José"];
+
+console.log(nomes.includes("José"))//treu or false
+console.log(nomes.includes("Maria"))//treu or false
+
+if(nomes.includes("Matheus")){
+    console.log("Esta na listra")
+}else{
+    console.log("Não esta na lista")
+}
