@@ -170,9 +170,24 @@ let busca = listagem.find((item)=>{
 }) */
 
 //FILTER devolve todos que encontrar
-let palavras = ["Matheus","Ricardo", "José","João"];
+/* let palavras = ["Matheus","Ricardo", "José","João"];
 
 let resultado = palavras.filter((item)=>{
     return item.length <= 4;
 })
 console.log(resultado)
+ */
+
+//==========AULA24==============
+//Funções anonimas
+function somar (a, b){
+    let total = a + b
+    console.log(total)
+}
+somar(10, 30);
+
+let subtrair = (valor1, valor2) => {
+    let total = valor1 - valor2;
+    console.log(total);
+}
+subtrair(30, 20) 
