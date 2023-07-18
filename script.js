@@ -144,7 +144,7 @@ lista.map((item, index) =>{
 
 //REDUCE - busca reduzir um array
 
-let numeros = [5,3,2,5];
+/* let numeros = [5,3,2,5];
 
 let total = numeros.reduce((acumulador, numero, indice, original)=>{
 console.log(`${acumulador} - total até o momento`);
@@ -155,4 +155,24 @@ console.log("===========================")
 return acumulador += numero
 })
 
-console.log(`Total do reduce: ${total}`)
+console.log(`Total do reduce: ${total}`) */
+
+
+
+
+//=============AULA23========================
+//FIND
+/* let listagem = [5,3, "José", 2, "Matheus"]
+let busca = listagem.find((item)=>{
+    if(item === "José"){
+        console.log("Tem o José!!")
+    }
+}) */
+
+//FILTER
+let palavras = ["Matheus","Ricardo", "José","João"];
+
+let resultado = palavras.filter((item)=>{
+    return item.length <= 4;
+})
+console.log(resultado)
