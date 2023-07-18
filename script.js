@@ -161,7 +161,7 @@ console.log(`Total do reduce: ${total}`) */
 
 
 //=============AULA23========================
-//FIND
+//FIND devolve somente o primeiro que encontrar
 /* let listagem = [5,3, "José", 2, "Matheus"]
 let busca = listagem.find((item)=>{
     if(item === "José"){
@@ -169,7 +169,7 @@ let busca = listagem.find((item)=>{
     }
 }) */
 
-//FILTER
+//FILTER devolve todos que encontrar
 let palavras = ["Matheus","Ricardo", "José","João"];
 
 let resultado = palavras.filter((item)=>{
