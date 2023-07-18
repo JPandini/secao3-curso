@@ -126,9 +126,33 @@ novoUsuario({ cargo:"Programador", status: "Ativo" })
 convidados("João", "Larissa", "Nicolas"); */
 
 
-function gerador(...numeros){
+/* function gerador(...numeros){
     console.log(numeros)
     const numeroGerado = Math.floor(Math.random() * numeros.length)
     console.log(`O nomero gerado foi: ${numeros[numeroGerado]}`);
 }
-gerador (1, 2, 4, 66, 65, 24, 12, 33);
+gerador (1, 2, 4, 66, 65, 24, 12, 33); */
+
+
+
+//---------------
+///MAP -> percorrrer todo um array 
+/* let lista = ["Matheus", "José", "Maria"];
+lista.map((item, index) =>{
+    console.log(`Passando: ${item} - esta na posição: ${index}`)
+}) */
+
+//REDUCE - busca reduzir um array
+
+let numeros = [5,3,2,5];
+
+let total = numeros.reduce((acumulador, numero, indice, original)=>{
+console.log(`${acumulador} - total até o momento`);
+console.log(`${numero} - valor atual`);
+//console.log(`${indice} - indice atual`);
+//console.log(`${original} - array original`);
+console.log("===========================")
+return acumulador += numero
+})
+
+console.log(`Total do reduce: ${total}`)
